@@ -44,7 +44,7 @@ def upload():
         except FileNotFoundError:
             return {"msg": "Extensão não suportada!"}, 415
 
-    return {"msg": "Arquivo criado com sucesso!"}, 200
+    return {"msg": "Arquivo criado com sucesso!"}, 201
 
 
 @app.get("/download/<filename>")
